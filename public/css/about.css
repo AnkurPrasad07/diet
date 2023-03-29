@@ -1,0 +1,97 @@
+.org-structure{
+    text-align: center;
+}
+
+.org-structure-img{
+    max-width: 70vw;
+    margin-inline: auto;
+}
+
+/* roles and functions */
+
+.functions h2{
+    text-align: center;
+}
+
+.functions-container{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.functions-container .functions-box{
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    background: url("/assets/images/func_01.png");
+}
+
+.functions-container .functions-box .function-box-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 2rem;
+    color: white;
+}
+
+.functions-container .functions-box .function-box-content p{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* directory */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid var(--primary-color);
+}
+
+th{
+    padding-block: 2rem;
+    background-color: var(--accent-color-light);
+}
+
+td{
+    text-align: center;
+    padding: 3rem;
+}
+
+tr{
+    cursor: pointer;
+}
+
+.form-row-heading{
+    cursor: inherit;
+}
+
+.form-row-heading:hover{
+    background-color: inherit;
+}
+
+tr:hover{
+    background-color: rgb(0, 0, 0, 0.02);
+}
+
+
+tr .table-image{
+    position: relative;
+    width: 10rem;
+    padding: 0;
+}
+
+
+tr .table-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+}
+
+
+

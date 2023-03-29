@@ -1,0 +1,23 @@
+tr{
+    cursor: inherit;
+}
+
+tr:hover{
+    background-color: inherit;
+}
+
+.form-programme-download{
+    cursor: pointer;
+}
+
+.form-programme-download:hover{
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.form-programme-download a i{
+    font-size: 2.5rem;
+}
+
+td{
+    padding: 2rem;
+}

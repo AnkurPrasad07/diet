@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  {{!--
+  <link rel="stylesheet" href="/css/bootstrap.min.css"> --}}
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/ec64b2b8aa.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  {{>navbar}}
+
+  <header>
+    <div class="swiper">
+
+      {{!-- swiper content --}}
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://picsum.photos/1560/700/" alt="slider img_01">
+          <div class="colour-overlay"></div>
+        </div>
+        <div class="swiper-slide"><img src="https://picsum.photos/1560/700/" alt="slider img_02">
+          <div class="colour-overlay"></div>
+        </div>
+        <div class="swiper-slide"><img src="https://picsum.photos/1560/700/" alt="slider img_03">
+          <div class="colour-overlay"></div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <div class="header-content">
+        <h1 class="header-title">Education is the manifestation of the perfection already in man.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eligendi nulla eveniet quia reiciendis fugit
+          labore debitis voluptates suscipit explicabo?</p>
+        <div>
+          {{>button}}
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="container content-section">
+    <h2>About the <span class="highlighted">Organisation</span></h2>
+    <div class="flex flex-content">
+      <div class="flex-content-left">
+        <p>District Institute of Education and Training (DIET) Kamki is a premier institute of education in the
+          district. With a mission to provide academic and resource support at the grass-root level for the success of
+          the various strategies and programmes being undertaken in the areas of elementary education with special
+          reference to the objectives of universalization of elementary education (UEE) and NLM targets in regard to
+          functional literacy in the age group of 15-35 years it has been established in the year 2008. For the purpose
+          of sustained growth and development of the education in the district it has been working since its inception.
+          Initially PSTE Course was not running in the DIET, but other all the activities like In- Service Teacher
+          Training programmes, looking after the Lab-Area Schools, implementation of national and state level
+          educational programmes/ projects and supporting the teachers of the district were undertaken with much
+          devotion and sincerity. In due course PSTE (Pre-Srvice Teachers Education ) programme leading 2-years Diploma
+          in Elementary Education course was started. </p>
+      </div>
+      <div class="flex-content-right">
+        <img src="/assets/images/about_org.png" alt="organisation image">
+      </div>
+    </div>
+
+  </section>
+
+  <section class="field-works">
+    <h2>Field of <br /> <span class="highlighted">Works</span></h2>
+    <div class="field-boxes flex container">
+      <div class="field-box">
+        <img src="/assets/images/field_01.jpg" alt="NEP image">
+        <div class="box-content">
+          <h3>Field of works</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio inventore veritatis eaque explicabo in
+            dicta animi voluptas aliquam omnis tempora distinctio vel, beatae id aut quam consequuntur provident
+            cupiditate dolorem enim nemo nesciunt perspiciatis? Dignissimos ad in aut repellat.</p>
+        </div>
+      </div>
+
+      <div class="field-box">
+        <img src="/assets/images/field_02.jpg" alt="NEP image">
+        <div class="box-content">
+          <h3>Field of works</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem labore odio, illum,
+            consequuntur illo ab commodi nostrum id obcaecati ipsum saepe error et. Ullam nulla dolorem assumenda.
+            Fugiat autem dolore, repellat ipsam nostrum doloremque dolores magnam repellendus qui perspiciatis.</p>
+        </div>
+      </div>
+
+      <div class="field-box">
+        <img src="/assets/images/field_03.jpg" alt="NEP image">
+        <div class="box-content">
+          <h3>Field of works</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam necessitatibus quia autem consequatur
+            repudiandae, facere sit, minus enim sapiente magnam animi cum ipsam unde saepe optio veniam deleniti!
+            Officia doloribus voluptates nulla possimus ducimus dolorem pariatur totam cum labore similique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container content-section">
+    <h2>Our <span class="highlighted">Mission</span></h2>
+    <div class="flex flex-content mision-flex">
+      <div class="flex-content-left">
+        <p>Our mission is to equip our trainees with the values of universal brotherhood which conduce the peace and
+          stability in the world. We are to extirpate ignorance from their minds and souls which would be able to lead
+          them towards liberation, Kaivalya and summum bonum. We would make our learners’ mind illuminated and body
+          strong and sturdy which could sustain in any adverse and austere situations. We are to make them resourceful,
+          filled their mind with the technique of teaching and in turn, strategies of preaching before common masses as
+          a torch bearer of the society. We are to equip them with knowledge and understanding which would, in turn,
+          develop their learners mentally, physically and emotionally. We are to make aware our learners towards
+          ecological balance and environmental upgradation. We are to train learners for the promotion, protection and
+          preservation of Himalayan cultures and traditions which would enable them to access of treasure of knowledge
+          and experiences learnt by their ancestors from time immemorial. We strive to train our learners mind for
+          critical thinking, logical reasoning and problem solving. We prepare them for becoming a responsive and
+          responsible citizen to the nation which have love and affection for their motherland. </p>
+        <br />
+        <p>Besides, our mission is to provide academic and resource support at the grass-root level for the success of
+          the various strategies and programmes being undertaken in the areas of elementary education. we strive to
+          train our in-service teachers in regard to new techniques of teaching in the light of NEP 2020. We are to make
+          them resourceful and enable them to use and apply the knowledge of ICT in the teaching –learning process. We
+          are to make them aware in relation to vicissitudes made in the field of education and society. Side by side we
+          are to cooperate the district administration and NGOs to make our locality healthy, prosperous and sturdy.
+        </p>
+      </div>
+      <div class="flex-content-right">
+        <img src="/assets/images/about_org.png" alt="organisation image" class="mission-img">
+      </div>
+    </div>
+
+  </section>
+
+  <section class="container content-section">
+    <h2>Our <span class="highlighted">Vision</span></h2>
+    <div class="flex flex-content vision-flex">
+      <div class="flex-content-left">
+        <p>Our mission is to equip our trainees with the values of universal brotherhood which conduce the peace and
+          stability in the world. We are to extirpate ignorance from their minds and souls which would be able to lead
+          them towards liberation, Kaivalya and summum bonum. We would make our learners’ mind illuminated and body
+          strong and sturdy which could sustain in any adverse and austere situations. We are to make them resourceful,
+          filled their mind with the technique of teaching and in turn, strategies of preaching before common masses as
+          a torch bearer of the society. We are to equip them with knowledge and understanding which would, in turn,
+          develop their learners mentally, physically and emotionally. We are to make aware our learners towards
+          ecological balance and environmental upgradation. We are to train learners for the promotion, protection and
+          preservation of Himalayan cultures and traditions which would enable them to access of treasure of knowledge
+          and experiences learnt by their ancestors from time immemorial. We strive to train our learners mind for
+          critical thinking, logical reasoning and problem solving. We prepare them for becoming a responsive and
+          responsible citizen to the nation which have love and affection for their motherland. </p>
+      </div>
+      <div class="flex-content-right">
+        <img src="/assets/images/about_org.png" alt="organisation image" class="vision-img">
+      </div>
+    </div>
+
+  </section>
+
+  <section class="notice">
+    <h2>Notice</h2>
+    {{!-- using swiper to get scroll container --}}
+    <div class="swiper mySwiper notice-swiper container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+
+          <div class="notice-box flex">
+            <p class="notice-date">21/03/23</p>
+            <h3 class="notice-title">The new NEP is to implemented by 17th of March</h3>
+            <a href="/assets/data/Home.pdf" download target="_blank" class="notice-download">Download
+              <i class="fa fa-solid fa-angles-down"></i>
+            </a>
+          </div>
+
+          <div class="notice-box flex">
+            <p class="notice-date">21/03/23</p>
+            <h3 class="notice-title">The new NEP is to implemented by 17th of March</h3>
+            <a href="/assets/data/Home.pdf" download target="_blank" class="notice-download">Download
+              <i class="fa fa-solid fa-angles-down"></i>
+            </a>
+          </div>
+
+          <div class="notice-box flex">
+            <p class="notice-date">21/03/23</p>
+            <h3 class="notice-title">The new NEP is to implemented by 17th of March</h3>
+            <a href="/assets/data/Home.pdf" download target="_blank" class="notice-download">Download
+              <i class="fa fa-solid fa-angles-down"></i>
+            </a>
+          </div>
+
+          <div class="notice-box flex">
+            <p class="notice-date">21/03/23</p>
+            <h3 class="notice-title">The new NEP is to implemented by 17th of March</h3>
+            <a href="/assets/data/Home.pdf" download target="_blank" class="notice-download">Download
+              <i class="fa fa-solid fa-angles-down"></i>
+            </a>
+          </div>
+
+          <div class="notice-box flex">
+            <p class="notice-date">21/03/23</p>
+            <h3 class="notice-title">The new NEP is to implemented by 17th of March</h3>
+            <a href="/assets/data/Home.pdf" download target="_blank" class="notice-download">Download
+              <i class="fa fa-solid fa-angles-down"></i>
+            </a>
+          </div>
+
+          <div class="notice-box flex">
+            <p class="notice-date">21/03/23</p>
+            <h3 class="notice-title">The new NEP is to implemented by 17th of March</h3>
+            <a href="/assets/data/Home.pdf" download target="_blank" class="notice-download">Download
+              <i class="fa fa-solid fa-angles-down"></i>
+            </a>
+          </div>
+
+          <div class="notice-box flex">
+            <p class="notice-date">21/03/23</p>
+            <h3 class="notice-title">The new NEP is to implemented by 17th of March</h3>
+            <a href="/assets/data/Home.pdf" download target="_blank" class="notice-download">Download
+              <i class="fa fa-solid fa-angles-down"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </section>
+
+  <section class="principal-message container">
+    <h2>Principal's <span class="highlighted">Message</span></h2>
+    <div class="principal-message-box flex">
+      <div class="message-box-para">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae optio non autem quae illum. Repudiandae
+          cupiditate id doloremque voluptas ipsa explicabo sint qui provident reprehenderit cumque, adipisci dolorem
+          autem, blanditiis excepturi delectus beatae! Velit illum doloribus iure tempore esse numquam, dolores eius,
+          soluta temporibus officia culpa harum aperiam unde repudiandae!</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae optio non autem quae illum. Repudiandae
+          cupiditate id doloremque voluptas ipsa explicabo sint plicabo sint qui provident reprehenderit cumque,
+          adipisci dolorem
+          autem, blanditiis excepturi delectus beatae! Velit</p>
+      </div>
+
+      <img src="/assets/images/field_03.jpg" alt="principal image">
+    </div>
+  </section>
+
+  <section class="faq container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-item-header flex">
+          <h3>When to Register for our institution</h3>
+          <div class="accordion-icon">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          {{!-- <i class="fa-solid fa-minus"></i> --}}
+        </div>
+
+        <div class="accordion-hidden-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis temporibus explicabo natus
+            hic numquam doloribus officia. Ab aut tempore dolore quis repellat delectus sit voluptatibus quod! Quaerat,
+            reiciendis ipsa. Repudiandae laboriosam ea, dolor incidunt illum ipsa modi, repellendus voluptas aut quis
+            magnam necessitatibus officiis optio enim veniam expedita unde itaque perferendis sunt? Exercitationem
+            mollitia delectus libero, voluptates id quasi.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item-header flex">
+          <h3>When to Register for our institution</h3>
+          <div class="accordion-icon">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          {{!-- <i class="fa-solid fa-minus"></i> --}}
+        </div>
+
+        <div class="accordion-hidden-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis temporibus explicabo natus
+            hic numquam doloribus officia. Ab aut tempore dolore quis repellat delectus sit voluptatibus quod! Quaerat,
+            reiciendis ipsa. Repudiandae laboriosam ea, dolor incidunt illum ipsa modi, repellendus voluptas aut quis
+            magnam necessitatibus officiis optio enim veniam expedita unde itaque perferendis sunt? Exercitationem
+            mollitia delectus libero, voluptates id quasi.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item-header flex">
+          <h3>When to Register for our institution</h3>
+          <div class="accordion-icon">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          {{!-- <i class="fa-solid fa-minus"></i> --}}
+        </div>
+
+        <div class="accordion-hidden-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis temporibus explicabo natus
+            hic numquam doloribus officia. Ab aut tempore dolore quis repellat delectus sit voluptatibus quod! Quaerat,
+            reiciendis ipsa. Repudiandae laboriosam ea, dolor incidunt illum ipsa modi, repellendus voluptas aut quis
+            magnam necessitatibus officiis optio enim veniam expedita unde itaque perferendis sunt? Exercitationem
+            mollitia delectus libero, voluptates id quasi.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item-header flex">
+          <h3>When to Register for our institution</h3>
+          <div class="accordion-icon">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          {{!-- <i class="fa-solid fa-minus"></i> --}}
+        </div>
+
+        <div class="accordion-hidden-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis temporibus explicabo natus
+            hic numquam doloribus officia. Ab aut tempore dolore quis repellat delectus sit voluptatibus quod! Quaerat,
+            reiciendis ipsa. Repudiandae laboriosam ea, dolor incidunt illum ipsa modi, repellendus voluptas aut quis
+            magnam necessitatibus officiis optio enim veniam expedita unde itaque perferendis sunt? Exercitationem
+            mollitia delectus libero, voluptates id quasi.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item-header flex">
+          <h3>When to Register for our institution</h3>
+          <div class="accordion-icon">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          {{!-- <i class="fa-solid fa-minus"></i> --}}
+        </div>
+
+        <div class="accordion-hidden-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis temporibus explicabo natus
+            hic numquam doloribus officia. Ab aut tempore dolore quis repellat delectus sit voluptatibus quod! Quaerat,
+            reiciendis ipsa. Repudiandae laboriosam ea, dolor incidunt illum ipsa modi, repellendus voluptas aut quis
+            magnam necessitatibus officiis optio enim veniam expedita unde itaque perferendis sunt? Exercitationem
+            mollitia delectus libero, voluptates id quasi.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item-header flex">
+          <h3>When to Register for our institution</h3>
+          <div class="accordion-icon">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          {{!-- <i class="fa-solid fa-minus"></i> --}}
+        </div>
+
+        <div class="accordion-hidden-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis temporibus explicabo natus
+            hic numquam doloribus officia. Ab aut tempore dolore quis repellat delectus sit voluptatibus quod! Quaerat,
+            reiciendis ipsa. Repudiandae laboriosam ea, dolor incidunt illum ipsa modi, repellendus voluptas aut quis
+            magnam necessitatibus officiis optio enim veniam expedita unde itaque perferendis sunt? Exercitationem
+            mollitia delectus libero, voluptates id quasi.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  {{>footer}}
+
+
+
+
+  {{!--
+  <script src="/js/bootstrap.js"></script> --}}
+  {{!-- script needed for the slider on the header --}}
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>

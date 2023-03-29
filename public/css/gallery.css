@@ -1,0 +1,25 @@
+.gallery-photos{
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.gallery-photos img{
+    width: 30rem;
+    height: 30rem;
+}
+
+.gallery h2{
+    text-align: center;
+}
+
+.gallery-videos {
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.gallery-videos video{
+    width: 30rem;
+    height: 30rem;
+}
