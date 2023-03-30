@@ -145,6 +145,7 @@ img{
 /* links */
 .links-nav{
     background-color: var(--accent-color-light);
+    position: relative;
 }
 
 .links-nav div{

@@ -1,8 +1,33 @@
  @media screen and (max-width : 1000px) {
 
-     .logos-nav .container .nav-img,
-     .links-nav {
+     .logos-nav .container .nav-img{
          display: none;
+     }
+     .links-nav{
+        overflow: initial;
+     }
+
+     .links-nav .container.flex{
+        position: absolute;
+        flex-direction: column!important;
+        justify-content: center !important;
+        background-color: white;
+        left: 100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 5rem;
+        z-index: 3;
+        transition: .2s ease-in-out all;
+        height: 100vh;
+     }
+
+     .links-nav .link.flex{
+        flex-direction: column !important;
+        margin-bottom: 2rem;
+     }
+
+     .links-nav .container.flex.active-toggle{
+        left: 0;
      }
 
      .logos-nav {
