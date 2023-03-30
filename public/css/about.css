@@ -36,6 +36,7 @@
 
 .functions-container .functions-box .function-box-content p{
     color: rgba(255, 255, 255, 0.7);
+    text-align: left;
 }
 
 
@@ -56,8 +57,12 @@ th{
 }
 
 td{
-    text-align: center;
+    text-align: center !important;
     padding: 3rem;
+}
+
+td p{
+    text-align: center;
 }
 
 tr{
@@ -92,6 +97,7 @@ tr .table-image img{
     height: 100% ;
     object-fit: cover;
 }
+
 
 
 
