@@ -238,6 +238,10 @@
      .more-details {
          width: calc(100% - 10rem);
      }
+
+     .main-form-inputs{
+        grid-template-columns: 1fr !important;
+     }
  }
 
 

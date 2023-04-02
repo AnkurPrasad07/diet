@@ -1,6 +1,8 @@
 const express = require('express')
 const { registerPartial } = require('hbs')
 require("./db/conn")
+const User = require("./models/userForm")
+// const Userfile = require("./models/userFile")
 const app = express()
 const path = require("path")
 const port = process.env.PORT || 3000
@@ -15,6 +17,10 @@ app.use(express.static(static_path))
 // other middlewares for bootstrap 
 app.use('/css', express.static(path.join(__dirname , "../node_modules/bootstrap/dist/css")))
 app.use('/js', express.static(path.join(__dirname , "../node_modules/bootstrap/dist/js")))
+
+//for form -middleware
+app.use(express.urlencoded({extended: false}))
+
 
 //view engine - set up
 app.set("view engine", "hbs")
@@ -66,9 +72,15 @@ app.get("/form", (req,res)=>{
 })
 
 
-
-
-
+app.post("/form", async(req, res)=>{
+    try {
+        const userData = new User(req.body)
+        await userData.save();
+        res.status(201).render("index")
+    } catch (error) {
+        res.status(500).send(error)
+    }
+})
 
 
 //server

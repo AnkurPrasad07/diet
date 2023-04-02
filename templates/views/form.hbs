@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-   <link rel="stylesheet" type="text/css" href="/css/media-query.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/form.css">
+  <link rel="stylesheet" type="text/css" href="/css/media-query.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://kit.fontawesome.com/ec64b2b8aa.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
@@ -16,12 +17,237 @@
 
   {{>navbar}}
 
-    
+  <section class="form container m-block">
+    <h2>Get Registered With us by filling up the <span class="highlighted">Required Details!</span></h2>
+
+    <form action="/form" method = "POST">
+      <div id="form-part-1" class= "form-parts active-form">
+        <h3>Step 01: Some Basic Details</h3>
+
+        <div class="main-form">
+          <div class="main-form-inputs">
+            <div class="main-form-input">
+              <label for="name-candidate">Name of the Candidate</label>
+              <input type="text" name="name_candidate" id="name-candidate">
+            </div>
+
+            <div class="main-form-input">
+              <label for="whatsapp-number">Whatsapp Number</label>
+              <input type="number" name="whatsapp_number" id="whatsapp-number">
+            </div>
+
+            <div class="main-form-input">
+              <label for="calling-number">Calling Number</label>
+              <input type="number" name="calling_number" id="calling-number">
+            </div>
+
+            <div class="main-form-input">
+              <label for="name-mother">Mother's Name</label>
+              <input type="text" name="name_mother" id="name-mother">
+            </div>
+
+            <div class="main-form-input">
+              <label for="name-father">Father's Name</label>
+              <input type="text" name="name_father" id="name-father">
+            </div>
+
+            <div class="main-form-input">
+              <label for="mother-number">Mother's Number</label>
+              <input type="number" name="mother_number" id="mother-number">
+            </div>
+
+            <div class="main-form-input">
+              <label for="father-number">Father's Number</label>
+              <input type="number" name="father_number" id="father-number">
+            </div>
+          </div>
+
+
+          <input type="button" value="Next" class="form-btn-primary" id="btn-primary-1">
+
+        </div>
+      </div>
+
+      <div id="form-part-2" class= "form-parts">
+        <h3>Step 02: Address & Qulifications</h3>
+
+        <div class="main-form">
+          <div class="main-form-inputs">
+            <div class="main-form-input">
+              <label for="address-permanent">Permanent Address</label>
+              <input type="text" name="address_permanent" id="address-permanent">
+            </div>
+
+            <div class="main-form-input">
+              <label for="address-present">Present Address</label>
+              <input type="text" name="address_present" id="address-present">
+            </div>
+
+            <div class="main-form-input">
+              <label for="nationality">Nationality</label>
+              <select id="nationality" name="nationality">
+                <option value="Indian">Indian</option>
+                <option value="American">American</option>
+                <option value="Nepali">Nepali</option>
+                <option value="Pakistani">Pakistani</option>
+              </select>
+            </div>
+
+            <div class="main-form-input">
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="dob" id="dob">
+            </div>
+
+            <div class="main-form-input">
+              <label for="name-father">% Secured in the class - XII Exam & year of passing Respectively:</label>
+              <div class="bi-input">
+                <input type="number" name="percentage_12" id="percentage-12">
+                <input type="number" name="year_12" id="year-12">
+              </div>
+
+            </div>
+
+            <div class="main-form-input">
+              <label for="name-father">% Secured in the class - X Exam & year of passing Respectively:</label>
+              <div class="bi-input">
+                <input type="number" name="percentage_10" id="percentage-10">
+                <input type="number" name="year_10" id="year-10">
+              </div>
+
+            </div>
+
+            <div class="main-form-input">
+              <label for="board-name-12">Name of Board (Class XII)</label>
+              <input type="text" name="board_name_12" id="board-name-12">
+            </div>
+          </div>
+
+          <input type="button" value="Back" class="form-btn-secondary" id="btn-secondary-2">
+          <input type="button" value="Next" class="form-btn-primary" id="btn-primary-2">
+        </div>
+      </div>
+
+      <div id="form-part-3" class= "form-parts">
+          <h3>Step 03: Other Informations</h3>
+
+          <div class="main-form">
+            <div class="main-form-inputs">
+              <div class="main-form-input">
+                <h4>Sex</h4>
+                <div class="radio">
+                  <input type="radio" id="male" name="sex" value="Male">
+                  <label for="male">Male</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" id="female" name="sex" value="Female">
+                  <label for="female">Female</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="other" name="sex" value="Other">
+                  <label for="other">Other</label>
+                </div>
+
+
+              </div>
+
+              <div class="main-form-input">
+                <label for="name-address-tel">Name & Address of the Guardian With Tel. No.</label>
+                <textarea name="name_address_tel" id="name-address-tel"></textarea>
+              </div>
+
+              <div class="main-form-input">
+                <h4>Category</h4>
+                <div class="radio">
+                  <input type="radio" id="apst" name="category" value="Apst">
+                  <label for="apst">APST</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" id="non-apst" name="category" value="Non-APST">
+                  <label for="non-apst">Non-APST</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-form-input declaration">
+              <h4>Declaration of the Applicant</h4>
+              <div class="radio">
+                <input type="checkbox" name="declaration" id="declaration">
+                <label for="declaration">I solemnly declare that I have read and understood the eligibility conditions
+                  for admission to 2 years PSTE Diploma Course (D.EI.Ed.). All the informations given above are true and
+                  correct to the best of my knowledge and belief. In the event of any information being found
+                  incorrect/false, my candidature shall be liable to be canceled without any notice at any time and all
+                  the fees paid by me be forfeited.</label>
+              </div>
+
+            </div>
+            <input type="button" value="Back" class="form-btn-secondary" id="btn-secondary-3">
+            <input type="button" value="Next" class="form-btn-primary" id="btn-primary-3">
+          </div>
+      </div>
+
+      <div id="form-part-4" class= "form-parts">
+          <h3>Step 04: Upload Files</h3>
+
+          <div class="main-form">
+            <div class="main-form-inputs">
+              <div class="main-form-input">
+                <label for="photo-passport">Passport Size Photo of the candidate</label>
+                <input type="file" name="photo_passport" id="photo-passport">
+              </div>
+
+              <div class="main-form-input">
+                <label for="marksheet-10">Marksheet of Class 10</label>
+                <input type="file" name="marksheet_10" id="marksheet-10">
+              </div>
+
+              <div class="main-form-input">
+                <label for="marksheet-12">Marksheet of Class 12</label>
+                <input type="file" name="marksheet_12" id="marksheet-12">
+              </div>
+
+              <div class="main-form-input">
+                <label for="certificate-10">Certificate of Class 10</label>
+                <input type="file" name="certificate_10" id="certificate-10">
+              </div>
+
+              <div class="main-form-input">
+                <label for="certificate-12">Certificate of Class 12</label>
+                <input type="file" name="certificate_12" id="certificate-12">
+              </div>
+
+              <div class="main-form-input">
+                <label for="certificate-caste">Caste Certificate/ ST certificate</label>
+                <input type="file" name="certificate_caste" id="certificate-caste">
+              </div>
+
+              <div class="main-form-input">
+                <label for="certificate-residential">Permanent/Residential Certificate (PRC)</label>
+                <input type="file" name="certificate_residential" id="certificate-residential">
+              </div>
+            </div>
+            <input type="button" value="Back" class="form-btn-secondary" id="btn-secondary-4">
+            <input type="button" value="Next" class="form-btn-primary" id="btn-primary-4">
+          </div>
+      </div>
+
+      <div id="form-part-5" class= "form-parts">
+          <h3>Step 05: Registeration Fee</h3>
+          {{!-- fee payment here --}}
+          <div class="main-form">
+            <input type="button" value="Back" class="form-btn-secondary" id="btn-secondary-5">
+            <input type="submit" value="submit" class="form-btn-primary" id="btn-primary-5">
+          </div>
+      </div>
+    </form>
+  </section>
 
   {{>footer}}
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="/js/index.js"></script>
+  <script src="/js/form.js"></script>
 
 </body>
 

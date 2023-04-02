@@ -1,0 +1,153 @@
+.form h2{
+    text-align: center;
+    width: 60%;
+    margin-inline: auto;
+}
+
+form{
+    background-color: var(--accent-color-light);
+    max-width: 80%;
+    margin-inline: auto;
+    position: relative !important;
+    width: 100%;
+}
+
+.form-parts{
+    display: none;
+    border: 2px solid black;
+}
+
+.active-form{
+    display: block;
+}
+
+form > div h3{
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    font-family: 'roxborough-bold';
+}
+
+.main-form{
+    padding: 5rem;
+}
+
+.main-form-input label{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.main-form-input h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+input, select{
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: 'poppins', sans-serif;
+    outline: none;
+    margin-top: .5rem;
+    box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=button],
+input[type=submit]{
+    font-size: 1.8rem;
+    font-family: 'roxborough-medium', 'poppins';
+    width: inherit;
+    padding: 1rem 3rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    padding: 2rem;
+    font-family: 'poppins', sans-serif;
+    border: 1px solid black;
+    font-size: 1.6rem;
+    outline: none;
+    resize: none;
+    height: 150%;
+}
+
+.form-btn-primary{
+    background-color: #c7e0cb;
+}
+
+.form-btn-secondary{
+    background-color: var(--accent-color-light);
+    margin-right: 1rem;
+}
+
+/* for grid system */
+
+.main-form-inputs{
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5rem;
+}
+
+
+.bi-input {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bi-input input{
+    text-align: center;
+}
+
+.radio{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    align-items: flex-start;
+}
+
+.radio label{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.declaration{
+    margin-bottom: 5rem;
+}
+
+
+/* styling the file upload btn */
+.main-form-input input[type = file]{
+    border: 2px dashed var(--primary-color);
+    border-radius: 1.5rem;
+    padding: 0;
+    cursor: pointer;
+}
+.main-form-input input[type = file]:hover{
+    background-color: #e9f1ea;
+}
+
+
+.main-form-input input[type = file]::-webkit-file-upload-button{
+    padding: 2rem 3rem;
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'roxborough-medium', 'poppins', sans-serif;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    background-color: var(--accent-color-medium);
+    margin-right: 2rem;
+    cursor: pointer;
+}
