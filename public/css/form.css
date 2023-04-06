@@ -9,7 +9,6 @@ form{
     max-width: 80%;
     margin-inline: auto;
     position: relative !important;
-    width: 100%;
 }
 
 .form-parts{
@@ -30,7 +29,7 @@ form > div h3{
 
 .main-form{
     padding: 5rem;
-}
+} 
 
 .main-form-input label{
     font-size: 1.8rem;
@@ -128,8 +127,20 @@ textarea{
 }
 
 
+#rzp-button1{
+    border: none;
+    outline: none;
+    display: block;
+    margin-inline: auto;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+#rzp-button1 img{
+    max-width: 30rem;
+}
 /* styling the file upload btn */
-.main-form-input input[type = file]{
+/* .main-form-input input[type = file]{
     border: 2px dashed var(--primary-color);
     border-radius: 1.5rem;
     padding: 0;
@@ -150,4 +161,4 @@ textarea{
     background-color: var(--accent-color-medium);
     margin-right: 2rem;
     cursor: pointer;
-}
+} */

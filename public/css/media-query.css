@@ -1,5 +1,6 @@
  @media screen and (max-width : 1000px) {
-
+    
+    /* utility */
      .logos-nav .container .nav-img{
          display: none;
      }
@@ -19,6 +20,8 @@
         z-index: 3;
         transition: .2s ease-in-out all;
         height: 100vh;
+        display: none;
+        
      }
 
      .links-nav .link.flex{
@@ -27,7 +30,12 @@
      }
 
      .links-nav .container.flex.active-toggle{
+        display: block;
         left: 0;
+     }
+
+     .nav_btn{
+        text-align: center;
      }
 
      .logos-nav {
@@ -42,17 +50,70 @@
          flex-direction: column-reverse;
      }
 
-     .flex-content-right img {
-         width: calc(100vw - 4rem) !important;
-         height: 50rem !important;
-     }
-
      .logos-nav .flex,
      .notice-box,
      .accordion-item-header,
      .field-boxes,
      .principal-message-box {
          flex-direction: row;
+     }
+
+     .footer-content {
+        padding: 5rem !important;
+        flex-direction: column;
+        gap: 5rem !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-about,
+    .footer-contact {
+        margin-inline: auto;
+    }
+
+    .footer-contact-content div {
+        flex-direction: row;
+    }
+
+    .footer-content div h3 {
+        text-align: center;
+        font-size: 2.5rem !important;
+    }
+
+    .footer-about img {
+        margin-inline: auto;
+    }
+
+    .footer-about p {
+        text-align: center;
+    }
+
+    .footer-contact-content {
+        width: 60%;
+        margin-inline: auto;
+    }
+
+    /* some resets */
+    h2 {
+        text-align: center;
+        font-size: 3.5rem !important;
+    }
+
+    h1 {
+        font-size: 5.5rem !important;
+    }
+
+    h3 {
+        font-size: 2rem !important;
+    }
+
+
+     
+    /* home */
+     .flex-content-right img {
+         width: calc(100vw - 4rem) !important;
+         height: 50rem !important;
      }
 
      .vision-flex {
@@ -62,8 +123,6 @@
      .field-box {
          width: calc(50% - 2rem) !important;
      }
-
-
 
      .notice-swiper {
          max-width: 80rem !important;
@@ -83,60 +142,16 @@
          max-width: 30rem !important;
      }
 
-     .footer-content {
-         padding: 5rem !important;
-         flex-direction: column;
-         gap: 5rem !important;
-         align-items: center;
-         text-align: center;
-     }
-
-     .footer-links,
-     .footer-about,
-     .footer-contact {
-         margin-inline: auto;
-     }
-
-     .footer-contact-content div {
-         flex-direction: row;
-     }
-
-     .footer-content div h3 {
-         text-align: center;
-         font-size: 2.5rem !important;
-     }
-
-     .footer-about img {
-         margin-inline: auto;
-     }
-
-     .footer-about p {
-         text-align: center;
-     }
-
-     .footer-contact-content {
-         width: 60%;
-         margin-inline: auto;
-     }
-
-     /* some resets */
-     h2 {
-         text-align: center;
-         font-size: 3.5rem !important;
-     }
-
-     h1 {
-         font-size: 5.5rem !important;
-     }
-
-     h3 {
-         font-size: 2rem !important;
-     }
+     
 
      /* for about section */
 
      .functions-container {
          flex-direction: row !important;
+     }
+
+     .th-photo{
+        padding-inline: 2rem;
      }
 
      .directory,
@@ -184,12 +199,12 @@
          flex-direction: row;
      }
 
-     .contact-principal-details div {
-         flex-direction: row;
+     .gallery-videos video{
+        width: calc(50% - 1rem) !important;
      }
 
-     .more-details h3 {
-         font-size: 3rem !important;
+     .contact-principal-details div {
+         flex-direction: row;
      }
  }
 
@@ -235,13 +250,28 @@
          margin-inline: 0rem !important;
      }
 
-     .more-details {
-         width: calc(100% - 10rem);
-     }
-
      .main-form-inputs{
         grid-template-columns: 1fr !important;
      }
+
+     .main-form{
+        padding: 2rem !important;
+     }
+
+     textarea{
+        height: 12rem !important;
+        margin-bottom: 3rem;
+     }
+
+     form{
+        max-width: 100%;
+     }
+
+     /* gallery*/
+     .gallery-videos video{
+        width: 100% !important;
+     }
+
  }
 
 
@@ -281,6 +311,11 @@
         padding: 3rem !important;
     }
 
+
+    .accordion-item-header h3{
+        font-size: 2rem !important;
+    }
+
     /* about section */
     .org-structure-img{
         width: 100% !important;
@@ -307,4 +342,9 @@
         text-align: center;
         margin-top: 1rem;
     }
+
+    #rzp-button1 img{
+        max-width: 20rem !important;
+    }
+
  }

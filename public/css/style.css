@@ -74,9 +74,6 @@ a{
     font-size: 1.8rem;
     font-family: 'roxborough-medium';
 }
-a:hover{
-    color: var(--accent-color-dark);
-}
 
 img{
     display: block;
@@ -95,7 +92,6 @@ img{
 .btn-main:hover{
     background-color: #bae0c0;
     color: black;
-    /* border: 1px solid var(--primary-color); */
 }
 
 img{
@@ -162,9 +158,6 @@ img{
     display: none;
 }
 
-
-
-
 /* header section - slider*/
 .swiper{
     width: 100%;
@@ -204,10 +197,6 @@ img{
     margin-inline: 1rem;
 }
 
-.swiper{
-    position: relative;
-}
-
 .header-content{
     position: absolute;
     left: 50%;
@@ -244,6 +233,7 @@ img{
 .header-content div a{
     padding: 1.5rem 5rem;
     font-size: 2rem;
+    pointer-events: all ;
 }
 
 /* about the organisation */
@@ -291,6 +281,7 @@ img{
     width: calc(33% - 1rem);
     cursor: pointer;
     transition: .5s ease all;
+    border: 2px solid var(--primary-color);
 }
 
 .field-box img{
@@ -301,8 +292,8 @@ img{
 }
 
 .box-content{
-    border: 2px solid var(--primary-color);
-    
+  
+    width: 100%;
 }
 
 .field-box:hover{
@@ -514,9 +505,11 @@ img{
 
 .cta-content .cta-content-right img{
     max-width: 35rem;
+    cursor: pointer;
+    transition: .5s ease all;
 }
 
-.cta-content .flex-content-right img:hover{
+.cta-content .cta-content-right img:hover{
     transform: translateX(-1rem);
 }
 

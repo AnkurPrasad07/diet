@@ -1,25 +1,41 @@
+.gallery{
+    margin-inline: 2rem;
+}
+
 .gallery-photos{
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    margin-bottom: 3rem !important;
 }
 
 .gallery-photos img{
-    width: 30rem;
-    height: 30rem;
+    max-width: 30rem;
+    max-height: 30rem;
+    cursor: pointer;
 }
 
 .gallery h2{
     text-align: center;
 }
 
-.gallery-videos {
+.gallery-videos{
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
 .gallery-videos video{
-    width: 30rem;
-    height: 30rem;
+    width: calc(33% - 2rem);
+    height: fit-content;
 } 
+
+/* for the view btn */
+
+.active-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

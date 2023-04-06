@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-   <link rel="stylesheet" type="text/css" href="/css/media-query.css">
-  {{!--
-  <link rel="stylesheet" href="/css/bootstrap.min.css"> --}}
+  <link rel="stylesheet" type="text/css" href="/css/media-query.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://kit.fontawesome.com/ec64b2b8aa.js" crossorigin="anonymous"></script>
@@ -35,11 +33,9 @@
         </div>
       </div>
 
-      <div class="swiper-pagination"></div>
-
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-
+      <div class="swiper-pagination"></div>
       <div class="header-content">
         <h1 class="header-title">Education is the manifestation of the perfection already in man.</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eligendi nulla eveniet quia reiciendis fugit
@@ -384,6 +380,52 @@
   <script src="/js/bootstrap.js"></script> --}}
   {{!-- script needed for the slider on the header --}}
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+      // code for the notice section
+  const swiper_notice = new Swiper(".mySwiper", {
+    direction: "vertical",
+    slidesPerView: "auto",
+    freeMode: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    mousewheel: true,
+  });
+
+  
+// for accordion in the FAQ section
+  const accordion_header = document.getElementsByClassName("accordion-item-header")
+  const accordion_icon = document.querySelectorAll(".accordion-icon i")
+  const accordion_item = document.getElementsByClassName("accordion-item")
+
+  for (let i = 0; i < accordion_item.length; i++) {
+
+    accordion_header[i].addEventListener("click", () => {
+      accordion_item[i].classList.toggle("active")
+      const icon_plus = "fa-plus"
+      const icon_minus = "fa-minus"
+      if (accordion_item[i].classList.contains("active")) {
+        accordion_icon[i].classList.replace(icon_plus, icon_minus)
+      } else {
+        accordion_icon[i].classList.replace(icon_minus, icon_plus)
+      }
+
+    })
+  }
+
+  </script>
   <script src="/js/index.js"></script>
 </body>
 

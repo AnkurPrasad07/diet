@@ -20,18 +20,24 @@
 }
 
 .functions-container .functions-box{
-    width: 30rem;
-    height: 30rem;
+    min-width: 30rem;
+    min-height: 30rem;
     position: relative;
     background: url("/assets/images/func_01.png");
+    cursor: pointer;
 }
+
 
 .functions-container .functions-box .function-box-content{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 2rem;
+    bottom: 2rem;
+    left: 2rem;
     color: white;
+    transition: .5s ease all;
+}
+
+.functions-container .functions-box .function-box-content:hover{
+    transform: translateY(-1rem);
 }
 
 .functions-container .functions-box .function-box-content p{
