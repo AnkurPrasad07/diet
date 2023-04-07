@@ -282,6 +282,7 @@ img{
     cursor: pointer;
     transition: .5s ease all;
     border: 2px solid var(--primary-color);
+
     min-height: 55rem;
 }
 
@@ -477,6 +478,8 @@ img{
 }
 
 /* special case - ordered list */
+
+
 .accordion-hidden-content ol{
     font-size: 1.6rem;
     margin-top: 2rem;
@@ -533,6 +536,7 @@ img{
 
 /* footer section */
 footer{
+    
     background-color: #dfede0;
     border-top: 3px solid var(--primary-color);
 }
