@@ -10,8 +10,8 @@
 }
 
 .gallery-photos img{
-    max-width: 30rem;
-    max-height: 30rem;
+    /* max-width: 30rem; */
+    width: calc(33% - 2rem);
     cursor: pointer;
 }
 
@@ -25,9 +25,9 @@
     flex-wrap: wrap;
 }
 
-.gallery-videos video{
+.gallery-videos iframe{
     width: calc(33% - 2rem);
-    height: fit-content;
+    min-height: 25rem
 } 
 
 /* for the view btn */
