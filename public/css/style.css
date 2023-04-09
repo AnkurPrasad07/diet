@@ -336,6 +336,8 @@ img{
     right: 5rem;
     font-size: 17rem;
     color: #e5dfec;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 /* scroll container of notice section */
