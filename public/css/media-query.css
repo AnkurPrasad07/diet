@@ -105,6 +105,10 @@
     }
 
     /* home */
+
+    .header-content{
+        width: 90% !important;
+    }
     .flex-content-right{
         margin-inline: auto ;
     }
@@ -112,6 +116,11 @@
      .flex-content-right img {
          height: 50rem !important;
      }
+
+     .vision-text i{
+        font-size: 15rem !important;
+    }
+
 
      .mission-img{
         width: fit-content !important;
@@ -215,6 +224,12 @@
  }
 
  @media screen and (max-width: 767px) {
+   
+    .vision-text i{
+        font-size: 12rem !important;
+        top: -7rem !important;
+        right: 2rem !important;
+    }
      .principal-message-box {
          flex-direction: column-reverse;
      }

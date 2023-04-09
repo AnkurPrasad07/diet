@@ -5,16 +5,19 @@
 @font-face {
     font-family: "roxborough-medium";
     src: url("../fonts/RoxboroughCF-Medium.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "roxborough-bold";
     src: url("../fonts/RoxboroughCF-Bold.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "roxborough-extra";
     src: url("../fonts/RoxboroughCF-ExtraBold.woff") format("woff");
+    font-display: swap;
 }
 /* resets  */
 *{
@@ -303,6 +306,16 @@ img{
     color: #a077d1;
 }
 
+.vision-text{
+    position: relative;
+}
+
+
+.vision h2{
+    z-index: 5;
+    position: relative;
+}
+
 .vision-text p{
     font-size: 2.4rem;
     padding: 5rem;
@@ -315,6 +328,14 @@ img{
     padding-inline: 1rem;
     border-radius: .5rem;
     background-color: #e9d7ff;
+}
+
+.vision-text i{
+    position: absolute;
+    top: -8rem;
+    right: 5rem;
+    font-size: 17rem;
+    color: #e5dfec;
 }
 
 /* scroll container of notice section */
@@ -420,8 +441,8 @@ img{
 }
 
 .principal-message-box img{
-    max-width: 30rem;
-    max-height: 30rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
 }
 
