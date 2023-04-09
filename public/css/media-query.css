@@ -120,11 +120,6 @@
      .field-box {
          width: calc(50% - 2rem) !important;
      }
-
-     .notice-swiper {
-         max-width: 80rem !important;
-     }
-
      .accordion {
          min-width: 60vw !important;
          max-width: none !important;
@@ -299,6 +294,14 @@
      .gallery-photos img{
         width: 100%;
      }
+
+     .popup-img img{
+        width: 95%;
+     }
+
+     .popup-img span{
+        font-size: 4rem;
+     }
     
 
 
@@ -318,6 +321,12 @@
      .nav_logo{
         width: 20rem !important;
      }
+
+
+     .flex-content-right img{
+        width: 100% !important;
+     }
+
 
      .notice-title {
          font-size: 1.6rem !important;
@@ -339,11 +348,6 @@
 
     .principal-message-box{
         padding: 3rem !important;
-    }
-
-
-    .accordion-item-header h3{
-        font-size: 2rem !important;
     }
 
     /* about section */

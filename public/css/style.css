@@ -203,7 +203,7 @@ img{
     top: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
-    width: 70vw;
+    width: 110rem;
     margin-block: 5rem;
     pointer-events: none;
 }
@@ -299,25 +299,29 @@ img{
 }
 
 /* mission and vission */
+.vision .highlighted{
+    color: #a077d1;
+}
+
 .vision-text p{
     font-size: 2.4rem;
     padding: 5rem;
     border: 3px solid var(--primary-color);
-    background-color: rgb(246, 255, 250);
+    background-color: rgb(250, 246, 255);
     font-style: italic;
 }
 
 .vision-text p .bg-highlight{
     padding-inline: 1rem;
     border-radius: .5rem;
-    background-color: rgb(176, 255, 177);
+    background-color: #e9d7ff;
 }
 
 /* scroll container of notice section */
 /* scroll bar set up- */
 .notice-swiper{
-    max-width: 60vw;
-    max-height: 40vh;
+    max-width: 80rem;
+    max-height: 30rem;
     background-color: var(--accent-color-light);
     padding: 0;
     border: 2px solid var(--primary-color);
@@ -574,5 +578,21 @@ footer{
 }
 
 
+/* copyright */
+.copyright{
+    padding: 2rem;
+    background-color: #d5e6d6;
+}
+.copyright span{
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+.copyright span a{
+    border-bottom: 1px solid black;
+    padding-inline-start: .5rem;
+}
 
 
