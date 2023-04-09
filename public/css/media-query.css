@@ -302,7 +302,12 @@
      .popup-img span{
         font-size: 4rem;
      }
-    
+     
+
+     /* success */
+     .success img{
+        width: 95%;
+     }
 
 
  }

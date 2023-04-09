@@ -23,7 +23,7 @@
     width: calc(33% - 2rem);
     min-height: 40rem;
     position: relative;
-    background: url("/assets/about/func_bg2.png");
+    background: url("/assets/about/func_bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;

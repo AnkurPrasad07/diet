@@ -82,7 +82,7 @@ app.post("/form_input", async(req, res)=>{
     try {
         const userData = new User(req.body)
         await userData.save();
-        res.status(201).render("index")
+        res.status(201).render("success")
     } catch (error) {
         res.status(500).send(error)
     }

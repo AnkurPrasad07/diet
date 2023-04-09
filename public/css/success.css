@@ -1,0 +1,18 @@
+.success{
+    margin-inline: auto;
+    text-align: center;
+}
+
+.success img{
+    margin-inline: auto;
+    width: fit-content;
+}
+
+.success h2{
+    margin-bottom: 1rem;
+}
+
+.success p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
