@@ -26,3 +26,18 @@ tr:hover{
 td{
     padding: 2rem;
 }
+
+.about-deled .deled-ol-main{
+    border: 2px solid rgb(60, 60, 60);
+    padding: 2rem;
+}
+
+.about-deled ol ol{
+    margin-top: 1rem;
+    margin-inline: 2rem;
+}
+
+.deled-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}

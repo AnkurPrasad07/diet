@@ -496,18 +496,20 @@ img{
 /* special case - ordered list */
 
 
-.accordion-hidden-content ol{
+ol{
     font-size: 1.6rem;
     margin-top: 2rem;
 }
 
-.accordion-hidden-content ol li{
+ol li{
     margin-bottom: 1rem;
     list-style: inherit;
     list-style-position: inside;
+    color: var(--secondary-color);
+    text-align: justify;
 }
 
-.accordion-hidden-content ol li span{
+ol li span{
     font-weight: 600;
 }
 
