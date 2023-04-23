@@ -367,6 +367,10 @@
          font-size: 1.4rem !important;
      }
 
+     ol li{
+        font-size: 1.4rem !important;
+     }
+
      .nav_logo{
         width: 20rem !important;
      }
@@ -379,7 +383,7 @@
         font-size: 1.5rem !important;
     }
 
-     .flex-content-right img{
+     .flex-content-right img, .flex-content-right .about_img{
         width: 100% !important;
      }
 

@@ -19,7 +19,7 @@
 
   <section class="form container m-block">
     <h2>Get Registered With us by filling up the <span class="highlighted">Required Details!</span></h2>
-
+    
     <form action="/form_input" method="POST" id="form_input">
       <div id="form-part-1" class="form-parts active-form">
         <h3>Step 01: Some Basic Details</h3>
@@ -234,13 +234,17 @@
       <div id="form-part-4" class="form-parts">
         <h3>Step 05: Registeration Fee</h3>
         <button id="rzp-button1"><img src="/assets/form/logo_razorpay.svg" alt=""></button>
+        
         {{!-- fee payment here --}}
         <div class="main-form">
+          <p style="margin-bottom: 2rem;">NOTE: Proceeding further without paying the registration fee will not get entertained by our side. *It is also mandatory to mail us at <strong>dietkamki@gmail.com</strong> with a screenshot of the payment.*</p>
           <input type="button" value="Back" class="form-btn-secondary" id="btn-secondary-4">
           <input type="submit" value="submit" class="form-btn-primary" id="btn-primary-4">
         </div>
       </div>
     </form>
+    <p class="form-note">*all fields are mandatory*</p>
+    
   </section>
 
   {{>footer}}

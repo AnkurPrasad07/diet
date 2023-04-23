@@ -4,6 +4,11 @@
     margin-inline: auto;
 }
 
+.form p.form-note{
+    text-align: center;
+    margin-top: 1rem;
+}
+
 form{
     background-color: var(--accent-color-light);
     max-width: 80%;
