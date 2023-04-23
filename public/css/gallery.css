@@ -6,7 +6,6 @@
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-    margin-bottom: 3rem !important;
 }
 
 .gallery-photos img{
@@ -27,8 +26,12 @@
 
 .gallery-videos iframe{
     width: calc(33% - 2rem);
-    min-height: 25rem
+    min-height: 24rem;
 } 
+
+.videos h2{
+    text-align: center;
+}
 
 /* for the view btn */
 .popup-img{
@@ -60,4 +63,5 @@
     transform: translate(-50%, -50%);
     border-radius: 2.5rem;
     width: 75rem;
+    max-height: 90vh;
 }

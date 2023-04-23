@@ -30,13 +30,16 @@
 
       {{!-- swiper content --}}
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="https://picsum.photos/1560/700/" alt="slider img_01">
+        <div class="swiper-slide"><img src="/assets/index/bg_01.webp" alt="slider img_01">
           <div class="colour-overlay"></div>
         </div>
-        <div class="swiper-slide"><img src="https://picsum.photos/1560/700/" alt="slider img_02">
+        <div class="swiper-slide"><img src="/assets/index/bg_02.webp" alt="slider img_02">
           <div class="colour-overlay"></div>
         </div>
-        <div class="swiper-slide"><img src="https://picsum.photos/1560/700/" alt="slider img_03">
+        <div class="swiper-slide"><img src="/assets/index/bg_03.webp" alt="slider img_03">
+          <div class="colour-overlay"></div>
+        </div>
+        <div class="swiper-slide"><img src="/assets/index/bg_04.webp" alt="slider img_03">
           <div class="colour-overlay"></div>
         </div>
       </div>
@@ -381,6 +384,10 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false
+      },
       loop: true,
       pagination: {
         el: '.swiper-pagination',
