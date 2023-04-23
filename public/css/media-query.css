@@ -54,7 +54,7 @@
      .notice-box,
      .accordion-item-header,
      .field-boxes,
-     .principal-message-box {
+     .principal-message-box{
          flex-direction: row;
      }
 
@@ -117,6 +117,11 @@
          height: 50rem !important;
      }
 
+     .flex-content-right .about_img{
+        height: 40rem !important;
+        width: 100% !important;
+     }
+
      .vision-text i{
         font-size: 15rem !important;
     }
@@ -168,11 +173,24 @@
      .survey,
      .certification,
      .useful-links,
-     .notice {
+     .notice, .sem{
          overflow-x: auto;
      }
 
-     .directory::-webkit-scrollbar,
+     /* programmes page */
+     .deled-content .sem-caption{
+        font-size: 2.5rem !important;
+     }
+
+     .deled-content-box{
+        flex-direction: column;
+     }
+
+     .sem-activities .sem-caption{
+        text-align: center;
+    }
+
+     /* .directory::-webkit-scrollbar,
      .survey::-webkit-scrollbar,
      .certification::-webkit-scrollbar,
      .useful-links::-webkit-scrollbar,
@@ -181,24 +199,24 @@
      }
 
      /* Track */
-     .directory::-webkit-scrollbar-track,
+     /* .directory::-webkit-scrollbar-track,
      .survey::-webkit-scrollbar-track,
      .certification::-webkit-scrollbar-track,
      .useful-links::-webkit-scrollbar-track,
      .notice::-webkit-scrollbar-track {
          background: var(--accent-color-light);
          border-radius: 2rem;
-     }
+     } */
 
      /* Handle */
-     .directory::-webkit-scrollbar-thumb,
+     /* .directory::-webkit-scrollbar-thumb,
      .survey::-webkit-scrollbar-thumb,
      .certification::-webkit-scrollbar-thumb,
      .useful-links::-webkit-scrollbar-thumb,
      .notice::-webkit-scrollbar-thumb {
          background: var(--accent-color-medium);
          border-radius: 2rem;
-     }
+     }  */
 
      /* gallery */
      .gallery-photos {
@@ -224,6 +242,10 @@
  }
 
  @media screen and (max-width: 767px) {
+
+    .about_org ol{
+        padding: 3rem !important;
+    }
    
     .vision-text i{
         font-size: 12rem !important;
@@ -237,6 +259,11 @@
      .principal-message-box::after {
          top: 4% !important;
          left: 4% !important;
+     }
+
+     .principal-message-box img{
+        width: 25rem !important;
+        height: 25rem !important;
      }
 
      .flex-content-right img {
@@ -281,7 +308,6 @@
      .functions-container .functions-box{
         width: 100%;
      }
-
 
      /* FORM */
      .main-form-inputs{
@@ -342,11 +368,17 @@
         width: 20rem !important;
      }
 
+     .about_org .flex-content{
+        flex-direction: column !important;
+    }
+
+    .about_org ol{
+        font-size: 1.5rem !important;
+    }
 
      .flex-content-right img{
         width: 100% !important;
      }
-
 
      .notice-title {
          font-size: 1.6rem !important;

@@ -10,9 +10,9 @@
 }
 
 .gallery-photos img{
-    /* max-width: 30rem; */
     width: calc(33% - 2rem);
     cursor: pointer;
+    height: 30rem;
 }
 
 .gallery h2{

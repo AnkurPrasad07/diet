@@ -21,7 +21,7 @@
 
 .functions-container .functions-box{
     width: calc(33% - 2rem);
-    min-height: 40rem;
+    min-height: 45rem;
     position: relative;
     background: url("/assets/about/func_bg.webp");
     background-repeat: no-repeat;

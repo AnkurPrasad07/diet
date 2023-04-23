@@ -244,14 +244,34 @@ img{
     margin-bottom: var(--margin-below);
 }
 
+.about_org ol{
+    border: 2px solid #567c5c;
+    border-radius: 25px;
+    padding: 5rem;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+.about_org ol li{
+     color:#567c5c;
+}
+
+
 .flex-content{
     gap: 5rem;
     justify-content: space-between;
     align-items: flex-start;
+    
 }
 
 .flex-content-right img{
     width: fit-content;
+}
+
+.flex-content-right .about_img{
+    height: 35rem;
+    width: 55rem;
+    border-radius: 2.5rem;
 }
 /* field-works */
 .field-works{
@@ -430,7 +450,7 @@ img{
 .principal-message-box::after{
     position: absolute;
     content: "";
-    top: 9%;
+    top: 7%;
     left: 2%;
     width: 100%;
     height: 100%;
@@ -443,8 +463,8 @@ img{
 }
 
 .principal-message-box img{
-    width: 25rem;
-    height: 25rem;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
 }
 

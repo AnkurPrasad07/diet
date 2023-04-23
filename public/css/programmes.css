@@ -27,17 +27,55 @@ td{
     padding: 2rem;
 }
 
-.about-deled .deled-ol-main{
-    border: 2px solid rgb(60, 60, 60);
-    padding: 2rem;
-}
-
 .about-deled ol ol{
     margin-top: 1rem;
     margin-inline: 2rem;
 }
 
-.deled-content h3{
-    font-size: 4rem;
+.deled-content .sem-caption{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'roxborough-bold', sans-serif;
+    text-align: center;
+}
+
+
+/* semester ki styles */
+.sem{
+    margin-bottom: 5rem;
+}
+
+th{
+    padding-inline: 1rem;
+}
+
+.sem-activities th, .sem-activities td{
+    text-align: left;
+    padding: 1rem;
+}
+
+.sem-activities .sem-caption{
+    text-align: left;
+}
+
+
+.sem-activities td h3, .sem-activities td p{
+    text-align: left;
+}
+
+.deled-content-box{
+    gap: 2rem;
+}
+
+.deled-content-box div{
+    border: .8px solid black;
+    border-radius: 15px;
+    padding: 2rem;
+    flex-basis: auto;
+}
+
+.deled-content-box div h3{
+    font-size: 2.5rem;
+    font-family: 'roxborough-bold';
     margin-bottom: 1rem;
 }
