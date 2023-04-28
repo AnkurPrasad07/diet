@@ -162,6 +162,10 @@ img{
 }
 
 /* header section - slider*/
+header .swiper {
+    min-height: 90vh;
+}
+
 .swiper{
     width: 100%;
     height: 90vh;
@@ -393,7 +397,8 @@ img{
 }
 
 .notice-box{
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr ;
     border-bottom: 2px solid var(--primary-color);
     position: relative;
 }
@@ -401,15 +406,14 @@ img{
 .notice-box .notice-date,
  .notice-box .notice-download{
     text-align: center;
+    padding: .5rem;
+}
+
+.notice-box .notice-download{
     padding: 2rem;
 }
 
-.notice-date{
-    flex-basis: 10%;
-}
-
 .notice-download{
-    flex-basis: 20%;
     transition: .2s ease all;
 }
 
@@ -426,7 +430,6 @@ img{
 .notice-box .notice-title{
     border-inline: 2px solid var(--primary-color);
     padding: 2rem;
-    flex-basis: 70%;
     text-align: center;
     font-size: 2rem;
 }
@@ -450,7 +453,7 @@ img{
 .principal-message-box::after{
     position: absolute;
     content: "";
-    top: 7%;
+    top: 5%;
     left: 2%;
     width: 100%;
     height: 100%;

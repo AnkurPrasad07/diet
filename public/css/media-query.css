@@ -269,6 +269,10 @@
         height: 25rem !important;
      }
 
+     .message-box-para-name p{
+        text-align: center;
+     }
+
      .flex-content-right img {
          height: 30rem !important;
      }
@@ -302,9 +306,12 @@
      }
 
      .vision-text p{
-        text-align: center;
-        font-size: 2.2rem !important;
+        font-size: 2rem !important;
         padding: 3rem !important;
+     }
+
+     .vision h2{
+        margin-bottom: 2rem !important;
      }
 
      /* about section */
