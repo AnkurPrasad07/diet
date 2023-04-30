@@ -472,7 +472,7 @@ header .swiper {
 }
 
 .personality-box{
-    padding: 5rem;
+    padding: 3rem;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23333' stroke-width='5' stroke-dasharray='15%2c 20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 3rem;
     background-color: #f8f5fc;
@@ -483,7 +483,7 @@ header .swiper {
 
 .big-personality-message img{
     border-radius: 50%;
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
