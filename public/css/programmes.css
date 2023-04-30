@@ -16,7 +16,7 @@ tr:hover{
 }
 
 .form-programme-download:hover{
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .form-programme-download a i{
@@ -70,8 +70,12 @@ th{
 .deled-content-box div{
     border: .8px solid black;
     border-radius: 15px;
-    padding: 2rem;
+    padding: 4rem 5rem;
     flex-basis: auto;
+}
+
+.deled-content-box div:nth-child(1){
+    background-color: var(--accent-color-light);
 }
 
 .deled-content-box div h3{
