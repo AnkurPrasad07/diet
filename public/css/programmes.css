@@ -64,6 +64,8 @@ th{
 }
 
 .deled-content-box{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     gap: 2rem;
 }
 
@@ -71,11 +73,11 @@ th{
     border: .8px solid black;
     border-radius: 15px;
     padding: 4rem 5rem;
-    flex-basis: auto;
 }
 
-.deled-content-box div:nth-child(1){
+.deled-content-box .box-first-sembreak{
     background-color: var(--accent-color-light);
+    flex-basis: 100%;
 }
 
 .deled-content-box div h3{
